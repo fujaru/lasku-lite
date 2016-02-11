@@ -1,0 +1,174 @@
+/**
+ * Main Stylesheet
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #eee;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #339933;
+}
+
+a:hover {
+    color: #33cc33;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+input {
+    background: #fff;
+    color: #000;
+    font-size: 1em;
+    line-height: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+    border: solid 1px #888;
+    border-radius: 5px;
+}
+
+button,
+input[type=button],
+input[type=submit],
+.btn {
+    background: #339933;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    line-height: 20px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.btn:hover {
+    background: #33cc33;
+    color: #fff;
+}
+
+.form {
+    border-collapse: collapse;
+}
+
+.form th {
+    font-weight: normal;
+    text-align: left;
+    padding: 6px 0;
+}
+
+.form th:after {
+    float: right;
+    content: ':';
+    padding: 0 5px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table th {
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.table td {
+    padding: 5px 10px;
+    border-bottom: solid 1px #aaa;
+}
+
+.table tr:last-child td {
+    border-bottom: solid 1px #333;
+}
+
+.table tr:nth-child(odd) td {
+    background: #ddd;
+}
+
+.table.highlight tr:hover td {
+    background: #ffffcc;
+}
+
+.aright {
+    text-align: right;
+}
+
+/* LAYOUT */
+
+.header {
+    background: #003333;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    box-sizing: border-box;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.header .logo img {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.header .menu a:hover {
+    background: #006666;
+}
+
+.header .menu ul {
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.header .menu ul a {
+    margin-left: -100px;
+    padding-left: 120px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
